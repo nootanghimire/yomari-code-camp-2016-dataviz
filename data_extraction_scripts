@@ -1,0 +1,12 @@
+##Some basic Cleaning
+
+$ pdftotext -layout -f {first_page} -l {last_page} {pdf_file_name} {output_file_name}
+
+$ sed '/^[^0-9]/d; /^$/d' {output_file_name} | sed 's/ \+/ ,/g' > {final_extracted_data}
+
+## TODO: 
+
+#	Need to do some programming in a scripting language/interpreter 
+#	which will convert the extracted data to a known format in db or csv. 
+
+
