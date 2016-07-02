@@ -1,0 +1,125 @@
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+*{
+	font-family: 'Open Sans','Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+body{
+	margin: 0px;
+	padding: 0px;
+}
+header{
+	padding: 15px;
+	font-size: 18px;
+	background:#269;
+	color: #fff;
+}
+#data{
+	padding: 10px;
+	background:#37a;
+	color:white;
+}
+#data label{
+	font-size: 18px;
+}
+#visualize{
+	padding: 10px;
+	text-align: center;
+}
+
+.dropdown {
+
+	text-transform: uppercase;
+	display: inline-block;
+	position: absolute;
+	margin-left: 10px;
+	width: 150px;
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+	background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+	background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, 0.08);
+}
+.dropdown:before, .dropdown:after {
+	content: '';
+	position: absolute;
+	z-index: 2;
+	top: 9px;
+	right: 10px;
+	width: 0;
+	height: 0;
+	border: 4px dashed;
+	border-color: #888 transparent;
+	pointer-events: none;
+}
+.dropdown:before {
+	border-bottom-style: solid;
+	border-top: none;
+}
+.dropdown:after {
+	margin-top: 7px;
+	border-top-style: solid;
+	border-bottom: none;
+}
+
+.dropdown-select {
+	text-transform: uppercase;
+	outline: none;
+	position: relative;
+	width: 130%;
+	margin: 0;
+	padding: 6px 8px 6px 10px;
+	height: 28px;
+	line-height: 14px;
+	font-size: 12px;
+	text-shadow: 0 1px white;
+	/* Fallback for IE 8 */
+	background: #f2f2f2;
+	/* "transparent" doesn't work with Opera */
+	background: rgba(0, 0, 0, 0) !important;
+	border: 0;
+	border-radius: 0;
+	-webkit-appearance: none;
+}
+.dropdown-select:focus {
+	z-index: 3;
+	width: 100%;
+	color: #394349;
+	outline-offset: -2px;
+}
+.dropdown-select > option {
+	margin: 3px;
+	padding: 6px 8px;
+	text-shadow: none;
+	background: #f2f2f2;
+	border-radius: 3px;
+	cursor: pointer;
+}
+
+.button {
+	text-shadow: 0 1px white;
+	text-transform: uppercase;
+	outline: none;
+	display: inline-block;
+	position: relative;
+	margin-right: 10px;
+	padding: 5px;
+	width: 150px;
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	background-image: -webkit-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+	background-image: -moz-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+	background-image: -o-linear-gradient(top, transparent, rgba(0, 0, 0, 0.06));
+	background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.06));
+}
+.button:hover{
+	background: #ddd;
+}
+.button:active{
+	border:1px solid #aaa;
+	background: #ccc;
+	box-shadow: inset 0px 0px 10px rgba(0,0,0,0.3);
+}
